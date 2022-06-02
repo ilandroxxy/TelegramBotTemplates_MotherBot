@@ -13,7 +13,7 @@ def step(call):
     markup = telebot.types.InlineKeyboardMarkup(row_width=1)
 
     if call.data == "example":
-        msg = bot.send_message(call.message.chat.id, "А вот и первый пример 👉 /example2 ", reply_markup = markup)
+        msg = bot.send_message(call.message.chat.id, "А вот и второй пример 👉 /example2 ", reply_markup = markup)
 
     if call.data == "exitexample":
         msg = bot.send_message(call.message.chat.id, "Спасибо за просмотр, попробуй модифицировать программу и дописать что-то свое, так лучше усвоится.", reply_markup = markup)
